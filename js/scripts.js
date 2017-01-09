@@ -37,3 +37,13 @@ var letterCount = function (s) {
 }
 
 console.log(reverseStr(letterCount(sentence)));
+
+$(function () {
+  $(".before").click(function () {
+    $(".result").text(sentence);
+  });
+
+  $(".after").click(function () {
+    $(".result").text(reverseStr(letterCount(sentence)));
+  });
+})
